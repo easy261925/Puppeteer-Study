@@ -122,7 +122,6 @@ let dynamicFunc = async () => {
     let userListText = await page.$$eval('.user-des', els => Array.from(els).map(el => el.innerText));
     // user-list-group 模块所有数据整理
     let userArr = [userListImg, userListTitle, userListText];
-    let userNameArr = ["userListImg", "userListTitle", "userListText"];
     let userData = [];
     for (var i = 0; i < userArr[1].length; i++) {
         let json = {};
